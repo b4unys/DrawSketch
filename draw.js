@@ -25,6 +25,8 @@ clearButton.addEventListener('click', () => {
 
 canvas.addEventListener('mousedown', (e) => {
     drawing = true;
+    ctx.beginPath();
+    ctx.moveTo(e.clientX, e.clientY);
     draw(e);
 });
 
