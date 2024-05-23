@@ -46,7 +46,7 @@ function draw(e) {
 
     ctx.lineWidth = currentBrushSize;
     ctx.lineCap = 'round';
-    ctx.strokeStyle = erasing ? '#ffffff' : currentColor;
+    ctx.strokeStyle = erasing ? '#f0f0f0' : currentColor;
 
     ctx.lineTo(e.clientX, e.clientY);
     ctx.stroke();
